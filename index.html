@@ -1,7 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vercera 2.0</title>
+    <meta
+      name="keywords"
+      content="Hackathon, Vercera, Hacakthon Aligarh, Turington, ZHCET, Aligarh Muslim University, Coding, AMU, AMURoboclub, RoboClub"
+    />
 
-<html>
-    <head></head>
-    <body>
-    Hello
-    </body>
-    </html>
+    <meta name="title" content="Vercera 2.0" />
+    <meta
+      name="description"
+      content="Hackathon Landing Page of ZHCET, Aligarh Muslim University"
+    />
+    <meta name="author" href="" content="" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hackrcdu.turington.in" />
+    <meta property="og:site_name" content="HackRCDU" />
+    <meta property="og:title" content="HackRCDU" />
+    <meta
+      property="og:description"
+      content="Hackathon Landing Page of ZHCET, Aligarh Muslim University"
+    />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://     ******** /logo.png"
+    />
+
+    <title>Vercera 2.0</title>
+
+    <!-- Logo on tab -->
+    <link rel="icon" href="assets/logo.png" />
+
+    <!-- font awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
+    <!--css files-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile-style.css" />
+    <link rel="stylesheet" href="css/particles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <!--google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Poppins|Roboto|Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="hero-section" class="section hero-section">
+      <div id="particles-js" class="particles">
+        <nav class="navbar">
+          <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+            <i class="fa fa-bars"></i>
+          </label>
+          <a href="#" class="hack-logo">
+            <img src="https://lh3.googleusercontent.com/pw/AL9nZEWazST1bjqzLbYphlMAQzzsxM-UzlqVxJ7eqZUaSWLxIZNFY3vNgJ6kkEZ8r5aekPMIzcWaD4IYylwb6dyTH9l98WZ3CQLIEq7qVMGaCXVufcBd00xWKGdw3epOzASych3-ix_ryR0xnz2psnhypOAt=w1920-h350-no?authuser=0" alt="logo" width="300" height="60">
+
+          </a>
+          <input type="checkbox" id="chkToggle" />
+          <ul class="main-nav" id="js-menu">
+            <li>
+              <a href="#about-section" class="nav-links">About</a>
+            </li>
+            <li>
+              <a href="#schedule-section" class="nav-links">Schedule</a>
+            </li>
+            <li>
+              <a href="#event-section" class="nav-links">Events</a>
+            </li>
+            <li>
+              <a href="#sponsors-section" class="nav-links">Sponsors</a>
+            </li>
+            <li>
+              <a href="#faq-section" class="nav-links">FAQs</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hackrcdu">
+          <h1 class="animated flipInX">
+            <img src = "VERCERAlogo_noBG.png" alt="event-log" width="400" height="90" />
+
+          </h1>
+          <h3>Comprehend With Joy!!</h3>
+          <h6>
+            Organised by AMURoboclub<br />
+            Zakir Husain College of Engineering and Technology, <br />
+
+           <br/> Aligarh Muslim University
+          </h6>
+          <button id="devfolio-apply-now">
+          Apply with  <img _ngcontent-d2c-frontend-c74="" src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg" alt="Unstop Logo" height="32" width="82" loading="lazy">
+          </button>
+          <div class="icons">
+            <a href="https://www.linkedin.com/company/amuroboclub/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/open-roboclub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://m.facebook.com/groups/139438082753631/"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://instagram.com/amuroboclub?igshid=OGQ2MjdiOTE="
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://youtube.com/@amuroboclub"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="illustration animated slideInRight">
+          <img
+            class="hero-img"
+            width="600px"
+            src="./assets/a1.png"
+            class=""
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about-section" class="section about-section">
+      <div class="highlights">
+        <h1 class="animated flip delay-2s">Hackathon Highlights_</h1>
+        <div class="container">
+          <ul class="countdown">
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+      </div>
+      <div class="prize">
+        <div class="prize-card">
+          Prizes Worth <br />
+          Rs.30K
+        </div>
+        <div class="prize-card">
+          Matic Prize <br />
+          Rs.10000
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card card-clock">
+          <i class="far fa-clock animated bounceIn delay-2s"></i>
+          <h3>18hrs</h3>
+        </div>
+        <div class="card card-themes">
+          <i class="fas fa-laptop-code animated bounceIn delay-2s"></i>
+          <h3>6 Themes</h3>
+        </div>
+        <div class="card card-teams">
+          <i class="fas fa-users animated bounceIn delay-2s"></i>
+          <h3>15 Teams</h3>
+        </div>
+        <div class="card card-food">
+          <i class="fas fa-hotdog animated bounceIn delay-2s"></i>
+          <h3>Food & Swags</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="themes-section" class="section themes-section">
+      <h1 class="animated flip delay-2s">Themes_</h1>
+      <div class="theme-cards">
+        <div class="theme-card card-clock">
+          <i class="fas fa-users animated bounceIn delay-2s"></i>
+          <h3>HACKATHON</h3>
+        </div>
+        <div class="theme-card card-themes">
+          <i class="fas fa-cubes animated bounceIn delay-2s"></i>
+          <h3>CAD COMPETITIONS </h3>
+        </div>
+        <div class="theme-card card-teams">
+          <i class="fas fa-brain animated bounceIn delay-2s"></i>
+          <h3>IDEATHON</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule-section" class="section schedule-section">
+      <div class="event-schedule">
+        <h1 class="animated flip delay-2s">Event Schedule_</h1>
+      </div>
+      <div class="schedule-section-section">
+         <h2 style="text-align: center"></h2>
+        <div class="section-1">
+          <table class="table-fill">
+            <thead>
+              <tr>
+                <td>Date</td>
+                <td>Time</td>
+                <td>Description</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>18th February </td>
+                <td>4:00 PM Onwards</td>
+                <td>
+                  Opening Ceremony of Vercera
+                </td>
+              </tr>
+              <tr>
+                <td>19th February</td>
+                <td>4:00 PM Onwards</td>
+                <td>
+                  Coding, Photography, and Report Writing Competitions Starts
+                </td>
+              </tr>
+              <tr>
+                <td>20th February</td>
+                <td>4:00 PM Onwards</td>
+                <td>Cyclothon</td>
+              </tr>
+              <tr>
+                <td>21st February</td>
+                <td>10:00 AM</td>
+                <td>Hackathon, Cad Competiton, Ideathon begins for 48 hours</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="partition"></div>
+        <div class="section-2">
+          <table class="table-fill">
+            <thead>
+              <tr>
+                <td>Date</td>
+                <td>Time</td>
+                <td>Description</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>22nd February</td>
+                <td>4:00 PM Onwards</td>
+                <td>Report and Photography Submission and Tug of War</td>
+              </tr>
+              <tr>
+                <td>23rd February</td>
+                <td>10:00 AM Onwards</td>
+                <td>Presentation of work done in Hackathons</td>
+              </tr>
+              <tr>
+                <td>23rd February</td>
+                <td>4:00 PM Onwards</td>
+                <td>Closing Ceremony and Result Announcement in Kennedy Auditoriam</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="event-section" class="event-section">
+      <div class="section events-section">
+        <div class="events">
+          <h1 class="animated flip delay-2s">Our Other Events_</h1>
+        </div>
+        <div class="events-section-section">
+          <div class="parent event-cards">
+            <div class="div1 event-card">
+              <a href="https://turington.in">
+                <h2>CODING</h2>
+              </a>
+            </div>
+            <div class="div2 event-card">
+              <a href="https://turington.in">
+                <h2>PHOTOGRAPHY</h2>
+              </a>
+            </div>
+            <div class="div3 event-card">
+              <a href="https://turington.in">
+                <h2>REPORT WRITING</h2>
+              </a>
+            </div>
+            <div class="div4 event-card">
+              <a href="https://turington.in">
+                <h2>CYCLOTHON</h2>
+              </a>
+            </div>
+            <div class="div5 event-card">
+              <a href="https://turington.in">
+                <h2>TUG OF WAR</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors-section" class="section sponsors-section">
+      <div class="sponsors-section-section">
+        <div class="sponsors">
+          <h1 class="animated flip delay-2s">Our Sponsors_</h1>
+          <div class="sponsors-list">
+            <div class="sponsors-list-list">
+              <a href="https://www.instagram.com/vikassweets/?hl=en">
+                <img src="./assets/vikas.png" width="200px" class="" alt="" />
+              </a>
+            </div>
+
+            <div class="sponsors-list-list">
+              <div class="padd"></div>
+              <a href="#">
+                <img src="./assets/nainital_momos.png" width="120px" class="" alt="" />
+              </a>
+            </div>
+
+            <div class="sponsors-list-list">
+              <h5>Coding Partner</h5>
+              <div class="sponsors-list-img">
+                <img src="./assets/CNLOGO.svg" width="180px" class="" alt="" />
+                <img src="./assets/index.png" width="280px" class="" alt="" />
+                <img
+                  src="./assets/0ba295b66f676a965ba15303344f9e553b9e5f54381820d3752eee997e0c5d97cec5dbd68de0edd07b62c69b5d6b11ed15dd4655fef05607afd6a9deab3e1cc1.png"
+                  width="200px"
+                  class=""
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors">
+          <h1 class="animated flip delay-2s">Our Mentors_</h1>
+        </div>
+        <div class="mentors-list">
+          <h4>Will Announce Soon...</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq-section" class="section faq-section">
+      <div class="faq-section-section">
+        <div class="faqs">
+          <h1 class="animated flip delay-2s">FAQs_</h1>
+        </div>
+        <div class="faqs-list">
+          <div class="accordion">
+            <div class="accordion-item">
+              <a>How big can my team be?</a>
+              <div class="content">
+                <p>The maximum team size allowed is 4.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>Can I come individually?</a>
+              <div class="content">
+                <p>Yes you can</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>When?</a>
+              <div class="content">
+                <p>
+                  Vercera 2023 will be a 48 hours hackathon which will stretch
+                  from 18th February to 23rd February 2020.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>Where?</a>
+              <div class="content">
+                <p>
+                  Vercera will be conducted on the college campus of ZHCET, AMU - Aligarh.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>Will there be food arrangement?</a>
+              <div class="content">
+                <p>
+                  Oh-Yeah-Absolutely. You will be provided with proper meals on
+                  both days. Thanks to our sponsors.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>How much does it cost?</a>
+              <div class="content">
+                <p>It will be notified</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>What are the criteria of shortlisting the teams?</a>
+              <div class="content">
+                <p>
+                  The registered participants will be shortlisted based on their
+                  GitHub and LinkedIn profiles.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>What do I bring with me to the event?</a>
+              <div class="content">
+                <p>
+                  You are required to bring your school/college ID, laptops,
+                  phone, chargers, extensions.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a>What is the eligibility criteria?</a>
+              <div class="content">
+                <p>
+                  You must be a student from any University/College or Higher
+                  Secondary School in India.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="footer-contact">
+        <h4><u>For any query contact us:</u></h4>
+        <h4>
+          Zaid Akhtar - 7667355785 <br />
+          Maaz Bin Asad - 8057201048 <br />
+          Email: amuroboclub@gmail.com
+        </h4>
+      </div>
+      <h4>
+        Built with <i class="fas fa-code"></i> and
+        <i class="fas fa-heart"></i> by
+        <a href="https://github.com/farhan3293"
+          ><span>Farhan Khan</span></a
+        >
+        &
+        <a href="https://github.com/Prajjawal12"><span>Prajjawal Deep Yadav</span></a>
+      </h4>
+    </footer>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- JavaScript Files -->
+    <script src="js/script.js"></script>
+    <script src="js/particles.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let devfolioOptions = {
+          buttonSelector: "#devfolio-apply-now",
+          key: "hackrcdu",
+        };
+
+        let script = document.createElement("script");
+        script.src = "https://apply.devfolio.co";
+        document.head.append(script);
+
+        script.onload = function () {
+          new Devfolio(devfolioOptions);
+        };
+
+        script.onerror = function () {
+          document
+            .querySelector(devfolioOptions.buttonSelector)
+            .addEventListener("click", function () {
+              window.location.href =
+                "https://devfolio.co/external-apply/" + devfolioOptions.key;
+            });
+        };
+      });
+    </script>
+  </body>
+</html>
