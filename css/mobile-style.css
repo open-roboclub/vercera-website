@@ -356,7 +356,7 @@
     grid-area: 3 / 1 / 4 / 2;
   }
   .div4 {
-    background-image: url("../assets/img4.jpg");
+    background-image: url("../assets/idea.jpeg");
     grid-area: 4 / 1 / 5 / 2;
   }
   .div5 {
@@ -522,3 +522,4 @@ h6{
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
+
