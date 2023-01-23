@@ -28,6 +28,9 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  .ver-logo{
+    margin-top: 60px;
+  }
 
   .hackrcdu h1 {
     font-family: Poppins;
