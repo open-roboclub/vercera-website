@@ -415,7 +415,12 @@ body {
 .div6 {
   background: linear-gradient( #020202, transparent), url("../assets/hackathon.jpg");
   
-  grid-area: 3 / 1 / 4 / 9;
+  grid-area: 3 / 1 / 4 / 6;
+}
+.div7 {
+  background: linear-gradient( #020202, transparent), url("../assets/img7.jpg");
+  
+  grid-area: 3 / 6 / 4 / 9;
 }
 
 .event-card {
