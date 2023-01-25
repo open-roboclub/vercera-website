@@ -29,7 +29,10 @@
     transform: translateY(-50%);
   }
   .ver-logo{
-    margin-top: 60px;
+    margin-top: 20px;
+    width: 95%;
+    height: 95%;
+
   }
 
   .hackrcdu h1 {
@@ -51,6 +54,15 @@
     padding-bottom: 5px;
     margin-bottom: 10px;
   }
+
+  .hackrcdu h6 {
+    font-size: 18px;
+    font-family: Poppins;
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
 
   .illustration {
     position: relative;
@@ -365,9 +377,10 @@
     grid-template-rows: repeat(12, 1fr);
   }
   .parent-prize {
-    margin: 10px 30px;
+    margin: 10px 0px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    font-size: 1rem;
    
   }
   .styled-table {
