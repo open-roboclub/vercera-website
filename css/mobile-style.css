@@ -233,8 +233,8 @@
 
   .schedule-section {
     height: 110vh;
-    margin-bottom: 300px;
-    font-size: 1rem;
+    margin-bottom: 10px;
+    font-size: 0.7rem;
   }
 
   .themes-section {
@@ -321,7 +321,17 @@
     position: relative;
     display: flex;
     width: 95%;
-    margin-top: 10px;
+    margin-top: 100px;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #eeeeee;
+  }
+
+  .events-section-prize {
+    position: relative;
+    display: flex;
+    width: 95%;
+    margin-top: 0px;
     justify-content: center;
     font-size: 1rem;
     background-color: #eeeeee;
@@ -330,6 +340,10 @@
   .events {
     margin-top: 20px;
   }
+  .events-prize {
+    margin-top: 10px;
+  }
+
 
   .events h1 {
     font-family: Poppins;
@@ -340,10 +354,25 @@
     bottom: 0;
   }
 
+  .events-section-section-prize {
+    width: 100%;
+    bottom: 0;
+  }
+
   .parent {
     margin: 10px 0px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
+  }
+  .parent-prize {
+    margin: 10px 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+   
+  }
+  .styled-table {
+    min-width: 350px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 2);
   }
 
   .div1 {
