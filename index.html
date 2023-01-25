@@ -103,14 +103,14 @@
 
           </h1>
           <h3>Learn while you adventure!</h3>
-          <h6>
+          <h6 style="text-align: justify">
             Conducted by AMURoboclub<br />
             Zakir Husain College of Engineering and Technology, <br />
 
            <br/> Aligarh Muslim University
           </h6>
           <button id="devfolio-apply-now">
-          Apply <!--with   <img _ngcontent-d2c-frontend-c74="" src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg" alt="Unstop Logo" height="32" width="82" loading="lazy" -->
+          Apply 
           </button>
           <div class="icons">
             <a href="https://www.linkedin.com/company/amuroboclub/"
@@ -187,10 +187,7 @@
           <i class="fas fa-laptop-code animated bounceIn delay-2s"></i>
           <h3>6 Competitions</h3>
         </div>
-      <!--   <div class="card card-teams">
-          <i class="fas fa-users animated bounceIn delay-2s"></i>
-          <h3>15 Teams</h3>
-        </div> -->
+
         <div class="card card-food">
           <i class="fas fa-hotdog animated bounceIn delay-2s"></i>
           <h3>Unlimited Adventure</h3>
@@ -217,7 +214,7 @@
     </section>
 
     <!-- Schedule Section -->
-    <section id="schedule-section" class="section schedule-section" style="font-size: 15px;">
+    <section id="schedule-section" class="section schedule-section">
       <div class="event-schedule">
         <h1 class="animated flip delay-2s">Event Schedule_</h1>
       </div>
@@ -363,29 +360,63 @@
     </section>
 
 
-<!-- 
 
-    <section id="themes-section" class="section themes-section">
-      <h1 class="animated flip delay-2s">Prizes_</h1>
-      <div class="theme-cards">
-        <div class="theme-card card-clock">
-          <i class="fa-solid fa-code animated bounceIn delay-2s"></i>
-          <h3>SOFTWARE</h3>
+    <section id="event-section-prize" class="event-section-prize">
+      <div class="section events-section-prize">
+        <div class="events-prize">
+          <h1 class="animated flip delay-2s">Prizes_</h1>
         </div>
-        <div class="theme-card card-themes">
-          <i class="fa-solid fa-microchip animated bounceIn delay-2s"></i>
-          <h3>HARDWARE</h3>
-        </div>
-        <div class="theme-card card-teams">
-          <i class="fa-solid fa-gear animated bounceIn delay-2s"></i>
-          <h3>MECHATRONICS</h3>
+        <div class="events-section-section-prize">
+          <div class="parent-prize event-cards">
+        <table class="styled-table">
+          <thead>
+              <tr>
+                  <th>Event</th>
+                  <th>Winner</th>
+                  <th>Runner up</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Hackathon</td>
+                  <td>&#8377;4000</td>
+                  <td>&#8377;2000</td>
+              </tr>
+              <tr class="active-row">
+                  <td>CAD</td>
+                  <td>&#8377;4000</td>
+                  <td>&#8377;2000</td>
+              </tr>
+              <tr>
+                <td>Ideathon</td>
+                <td>&#8377;4000</td>
+                <td>&#8377;2000</td>
+            </tr>
+
+            <tr class="active-row">
+              <td>Code-Thon</td>
+              <td>&#8377;1000</td>
+              <td>T-Shirt</td>
+            </tr>
+            <tr>
+              <td>Blog Writing</td>
+              <td>&#8377;1000</td>
+              <td>T-shirt</td>
+            </tr>
+            <tr class="active-row">
+              <td>GeoCaching</td>
+              <td>T-shirt</td>
+              <td>T-shirt</td>
+            </tr>
+              <!-- and so on... -->
+          </tbody>
+      </table>
+      </div>
+      </div>
+        
         </div>
       </div>
-    </section> -->
-
-
-
-
+    </section>
 
 
 
@@ -408,22 +439,7 @@
                 <img src="./assets/nainital_momos.png" width="120px" class="" alt="" />
               </a>
             </div>
-<!-- 
-            <div class="sponsors-list-list">
-              <h5>Coding Partner</h5>
-              <div class="sponsors-list-img">
-                <img src="./assets/CNLOGO.svg" width="180px" class="" alt="" />
-                <img src="./assets/index.png" width="280px" class="" alt="" />
-                <img
-                  src="./assets/0ba295b66f676a965ba15303344f9e553b9e5f54381820d3752eee997e0c5d97cec5dbd68de0edd07b62c69b5d6b11ed15dd4655fef05607afd6a9deab3e1cc1.png"
-                  width="200px"
-                  class=""
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div> -->
+
         <div class="mentors">
           <h1 class="animated flip delay-2s">Our Mentors_</h1>
         </div>
@@ -544,12 +560,12 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         let devfolioOptions = {
-          buttonSelector: "#devfolio-apply-now",
-          key: "hackrcdu",
+          buttonSelector: "",
+          key: "",
         };
 
         let script = document.createElement("script");
-        script.src = "https://apply.devfolio.co";
+        script.src = "";
         document.head.append(script);
 
         script.onload = function () {
@@ -561,7 +577,7 @@
             .querySelector(devfolioOptions.buttonSelector)
             .addEventListener("click", function () {
               window.location.href =
-                "https://devfolio.co/external-apply/" + devfolioOptions.key;
+                "" + devfolioOptions.key;
             });
         };
       });
