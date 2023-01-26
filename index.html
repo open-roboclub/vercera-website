@@ -3,6 +3,76 @@
   <head>
     <script src="https://kit.fontawesome.com/c43c657c77.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
+    <style>
+      .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #55025b;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #55025b;
+  color: white;
+}
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vercera</title>
     <meta
@@ -109,9 +179,9 @@
 
            <br/> Aligarh Muslim University
           </h6>
-          <button id="devfolio-apply-now">
-          <a href="https://forms.gle/jrJatiSxCE5T281Z7" style="color: white;" target="_blank">Apply here </a>
-          </button>
+        
+          <a href="https://forms.gle/jrJatiSxCE5T281Z7" style="color: white;" target="_blank">  <button id="devfolio-apply-now">Apply here</button></a>
+         
           <div class="icons">
             <a href="https://www.linkedin.com/company/amuroboclub/"
                target="_blank"><i class="fab fa-linkedin"></i
@@ -222,46 +292,153 @@
         </div>
         <div class="events-section-section">
           <div class="parent event-cards">
-            <div class="div1 event-card">
+            <div class="div1 event-card" id="myBtn" style="cursor: pointer;">
               <!-- <a href="pdf/vercera-pdf.pdf" target="_blank"> -->
                 <h2>Vercera 
                   
-                Code-Thon
+                Code-Thon&nbsp;<span style="color: aqua; font-size: 17px; text-decoration: underline;">(Read More)</span>
+
                 </h2>
-              </a>
             </div>
             
-            <div class="div2 event-card">
+            <div class="div2 event-card" id="myBtn2" style="cursor: pointer;">
               <!-- <a href="pdf/vercera-pdf.pdf" target="_blank"> -->
-                <h2>Blog Writing</h2>
-              </a>
+                <h2>Blog Writing&nbsp;<span style="color: aqua; font-size: 17px; text-decoration: underline;">(Read More)</span></h2>
+             
             </div>
-         <div class="div3 event-card">
+         <div class="div3 event-card" id="myBtn3" style="cursor: pointer;">
               <!-- <a href="pdf/vercera-pdf.pdf" target="_blank"> -->
-                <h2>IDEATHON</h2>
-              </a>
+                <h2>IDEATHON&nbsp;<span style="color: aqua; font-size: 17px; text-decoration: underline;">(Read More)</span></h2>
+         
             </div>
-            <div class="div5 event-card">
+            <div class="div5 event-card" id="myBtn4" style="cursor: pointer;">
               <!-- <a href="pdf/vercera-pdf.pdf" target="_blank"> -->
-                <h2>CAD</h2>
-              </a>
+                <h2>CAD&nbsp;<span style="color: aqua; font-size: 17px; text-decoration: underline;">(Read More)</span></h2>
+              </div>
+            <div class="div6 event-card" id="myBtn5" style="cursor: pointer;">
+              <!-- <a href="pdf/vercera-pdf.pdf" target="_blank"> -->
+                <h2>Hackathon&nbsp;<span style="color: aqua; font-size: 17px; text-decoration: underline;">(Read More)</span></h2>
+            
             </div>
-            <div class="div6 event-card">
+            <div class="div7 event-card" id="myBtn6" style="cursor: pointer;">
               <!-- <a href="pdf/vercera-pdf.pdf" target="_blank"> -->
-                <h2>Hackathon</h2>
-              </a>
-            </div>
-            <div class="div7 event-card">
-              <!-- <a href="pdf/vercera-pdf.pdf" target="_blank"> -->
-                <h2>GeoCaching Game</h2>
-              </a>
+                <h2 >Lost City Quest&nbsp;<span style="color: aqua; font-size: 13px; text-decoration: underline;">(Read More)</span></h2>
+              
             </div>
           </div>
         </div>
       </div>
     </section>
+<!-- Modals -->
 
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close1 close">&times;</span>
+      <h2>Vercera Code_thon</h2>
+    </div>
+    <div class="modal-body">
+      <p>Write here about the event</p>
+     
+    </div>
+    <div class="modal-footer">
+      <h3>Provide the link here</h3>
+    </div>
+  </div>
+</div>
+<!-- The Modal -->
+<div id="blog" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close2 close">&times;</span>
+      <h2>Blog Writing</h2>
+    </div>
+    <div class="modal-body">
+      <p>Write here about the event</p>
+      
+    </div>
+    <div class="modal-footer">
+      <h3>Provide the link here</h3>
+    </div>
+  </div>
+</div>
+<!-- The Modal -->
+<div id="ideathon" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close3 close">&times;</span>
+      <h2>Ideathon</h2>
+    </div>
+    <div class="modal-body">
+      <p>Write here about the event</p>
+      
+    </div>
+    <div class="modal-footer">
+      <h3>Provide the link here</h3>
+    </div>
+  </div>
+</div>
+  <!-- The Modal -->
+<div id="cad" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close4 close">&times;</span>
+      <h2>CAD</h2>
+    </div>
+    <div class="modal-body">
+      
+    </div>
+    <div class="modal-footer">
+      <h3>Provide the link here</h3>
+    </div>
+  </div>
+</div>
+  <!-- The Modal -->
+  <div id="hackathon" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close5 close">&times;</span>
+        <h2>Hackathon</h2>
+      </div>
+      <div class="modal-body">
+        <p>Write here about the event</p>
+        
+      </div>
+      <div class="modal-footer">
+        <h3>Provide the link here</h3>
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div id="geo" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close6 close">&times;</span>
+        <h2>Lost City Quest</h2>
+      </div>
+      <div class="modal-body">
+        <p>Write here about the event</p>
+    
+      </div>
+      <div class="modal-footer">
+        <h3>Provide the link here</h3>
+      </div>
+    </div>
+  </div>
     <!-- Schedule Section -->
     <section id="schedule-section" class="section schedule-section">
       <div class="event-schedule">
@@ -308,7 +485,7 @@
               <tr>
                 <td>20th February</td>
                 <td>4:00 PM Onwards onwards</td>
-                <td>Hybrid mode GeoCaching Game begins</td>
+                <td>Hybrid mode Lost City Quest begins</td>
                 <td>AMURoboclub</td>
               </tr>
               <tr>
@@ -452,7 +629,8 @@
               </a>
             </div>
     </section>
-
+   
+    
     <section id="faq-section" class="section faq-section">
       <div class="faq-section-section">
         <div class="faqs">
@@ -463,7 +641,7 @@
             <div class="accordion-item">
               <a>How big can my team be?</a>
               <div class="content">
-                <p>The maximum team size allowed is 3 for Software Hackathon and GeoCaching Game, 2 for Ideathon. For remaining competitions the participation would be inidividual.</p>
+                <p>The maximum team size allowed is 3 for Software Hackathon and Lost City Quest, 2 for Ideathon. For remaining competitions the participation would be inidividual.</p>
               </div>
             </div>
             <div class="accordion-item">
@@ -573,7 +751,168 @@
     <!-- JavaScript Files -->
     <script src="js/script.js"></script>
     <script src="js/particles.js"></script>
-
+    <script>
+      // Get the modal
+      var modal1 = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn1 = document.getElementById("myBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close1")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn1.onclick = function() {
+        modal1.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal1.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal1) {
+          modal1.style.display = "none";
+        }
+      }
+      </script>
+       <script>
+        // Get the modal
+        var modal2 = document.getElementById("blog");
+        
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("myBtn2");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close2")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn2.onclick = function() {
+          modal2.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal2.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal2) {
+            modal2.style.display = "none";
+          }
+        }
+        </script>
+         <script>
+          // Get the modal
+          var modal3 = document.getElementById("ideathon");
+          
+          // Get the button that opens the modal
+          var btn3 = document.getElementById("myBtn3");
+          
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close3")[0];
+          
+          // When the user clicks the button, open the modal 
+          btn3.onclick = function() {
+            modal3.style.display = "block";
+          }
+          
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal3.style.display = "none";
+          }
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal3) {
+              modal3.style.display = "none";
+            }
+          }
+          </script>
+           <script>
+            // Get the modal
+            var modal4 = document.getElementById("cad");
+            
+            // Get the button that opens the modal
+            var btn4 = document.getElementById("myBtn4");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close4")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn4.onclick = function() {
+              modal4.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal4.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal4) {
+                modal4.style.display = "none";
+              }
+            }
+            </script>
+              <script>
+                // Get the modal
+                var modal5 = document.getElementById("hackathon");
+                
+                // Get the button that opens the modal
+                var btn5 = document.getElementById("myBtn5");
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close5")[0];
+                
+                // When the user clicks the button, open the modal 
+                btn5.onclick = function() {
+                  modal5.style.display = "block";
+                }
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal5.style.display = "none";
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal5) {
+                    modal5.style.display = "none";
+                  }
+                }
+                </script>
+                  <script>
+                    // Get the modal
+                    var modal6 = document.getElementById("geo");
+                    
+                    // Get the button that opens the modal
+                    var btn6 = document.getElementById("myBtn6");
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close6")[0];
+                    
+                    // When the user clicks the button, open the modal 
+                    btn6.onclick = function() {
+                      modal6.style.display = "block";
+                    }
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                      modal6.style.display = "none";
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                      if (event.target == modal6) {
+                        modal6.style.display = "none";
+                      }
+                    }
+                    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         let devfolioOptions = {
