@@ -7,7 +7,7 @@
 @media screen and (max-width: 600px) {
   .main-nav {
     position: relative;
-    background-color: #fc466b;
+    background: linear-gradient(to bottom right, #ac0b10, #000000);
     padding: 20px 0;
     transform: scaleY(0) rotateX(-90deg);
     transition: transform .3s cubic-bezier(0,1.84,.88,.78);
@@ -253,7 +253,7 @@
     height: 225vh;
     margin-top: 0;
     margin-bottom: 50px;
-  background: linear-gradient(to right bottom, rgb(63, 94, 251), rgb(252, 70, 107));
+    background: linear-gradient(to bottom right, #ac0b10, #000000);
     display: flex;
     justify-content: center;
     align-items: center;
