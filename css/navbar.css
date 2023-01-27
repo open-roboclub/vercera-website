@@ -5,11 +5,14 @@
 }
 
 body {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+  font-family: "Garamond", "serif";
+  font-weight: bold;
 }
 
 .navbar {
   position: relative;
+  /* position: fixed; */
   font-size: 25px;
   background: transparent;
 }
@@ -88,15 +91,16 @@ body {
 
   .main-nav li a {
     border-radius: 10px;
-    background: #3f5efb;
-    color: #fff;
+    /* background: #ec3d30; */
+    background: linear-gradient(to bottom, #ac0b10, #f8a333);
+    color: #000000;
     padding: 10px;
     font-size: 1.4rem;
     transform: scale(1);
   }
 
   .main-nav li:hover {
-    transform: scale(1.2) rotateZ(3deg);
+    transform: scale(1.2) rotateZ(0deg);
   }
 
   .nav-links {
