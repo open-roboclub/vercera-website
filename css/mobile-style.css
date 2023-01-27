@@ -155,6 +155,8 @@
     flex-direction: column;
     align-items: center;
     font-size: 1rem;
+    background: linear-gradient(to bottom right, #ac0b10, #000000);
+
   }
 
   .highlights {
@@ -250,14 +252,14 @@
   }
 
   .themes-section {
-    height: 225vh;
+    height: 150vh;
     margin-top: 0;
     margin-bottom: 50px;
     background: linear-gradient(to bottom right, #ac0b10, #000000);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .themes-section h1 {
@@ -271,6 +273,18 @@
   }
 
   .theme-card {
+    width: 80%;
+    height: 220px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #eeeeee;
+  }
+
+  .theme-card1 {
     width: 80%;
     height: 220px;
     margin: 8px;
@@ -336,17 +350,16 @@
     margin-top: 100px;
     justify-content: center;
     font-size: 1rem;
-    background-color: #eeeeee;
+    background: linear-gradient(to bottom right, #ac0b10, #000000);
   }
 
   .events-section-prize {
     position: relative;
     display: flex;
     width: 95%;
-    margin-top: 0px;
     justify-content: center;
     font-size: 1rem;
-    background-color: #eeeeee;
+    background: linear-gradient(to bottom right, #ac0b10, #000000);
   }
 
   .events {
@@ -364,6 +377,7 @@
   .events-section-section {
     width: 100%;
     bottom: 0;
+    background: linear-gradient(to bottom right, #ac0b10, #000000);
   }
 
   .events-section-section-prize {
@@ -473,13 +487,16 @@
   }
 
   .sponsors-section {
-    height: 100vh;
+    height: 50vh;
   }
 
   .sponsors-section-section {
-    height: 100vh;
     width: 95%;
     font-size: 1rem;
+  }
+
+  .theme-card{
+
   }
 
   .sponsors h1 {
@@ -522,6 +539,7 @@
 
   .faq-section {
     height: 100vh;
+    margin-top: 50px;
   }
 
   .faq-section-section {
