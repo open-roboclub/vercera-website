@@ -15,7 +15,7 @@
   }
 
   .hero-section {
-    height: 90vh;
+    height: 70vh;
     position: relative;
   }
 
@@ -147,9 +147,8 @@
   }
 
   .about-section {
-    height: 115vh;
+    height: 130vh;
     margin-top: 0;
-    background: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -246,15 +245,14 @@
   }
 
   .schedule-section {
-    height: 110vh;
-    margin-bottom: 10px;
+    height: 50vh;
+    margin-bottom: 0px;
     font-size: 0.7rem;
   }
 
   .themes-section {
     height: 150vh;
     margin-top: 0;
-    margin-bottom: 50px;
     background: linear-gradient(to bottom right, #ac0b10, #000000);
     display: flex;
     justify-content: center;
