@@ -369,6 +369,9 @@
     margin-top: 10px;
   }
 
+  #header-timeline{
+    font-size: 25px;
+  }
 
   .events h1 {
     font-family: Poppins;

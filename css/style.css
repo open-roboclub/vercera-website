@@ -251,8 +251,14 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
+#header-timeline{
+  font-size: 40px;
+  margin-top: 15px;
+}
+
 .schedule-section {
   position: relative;
+  height: 150vh;
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
