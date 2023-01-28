@@ -930,3 +930,18 @@ footer h4 a span {
 .flip-card-back h2{
   margin-top: 12px;
 }
+
+.timelineimg{
+  width: 100%;
+  display: block;
+  margin-top: -40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) { /* Target laptops and larger screens */
+  .timelineimg {
+    width: 1200px; /* Reduce the width for larger screens */
+    margin-top: -115px;
+  }
+}
