@@ -541,9 +541,9 @@
   }
 
   .faq-section {
-    height: 130vh;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    height: 133vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   #faqq{
     margin-bottom: 30px;
@@ -552,15 +552,17 @@
   .faq-section-section {
     width: 100%;
     font-size: 1rem;
+    margin-bottom: 120px;
+    margin-top: 20px;
   }
 
   .faqs {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .faqs-list {
-    height: 115vh;
+    height: 130vh;
     margin-bottom: 10px;
   }
 
@@ -568,6 +570,7 @@
     height: 25vh;
     font-size: 0.9rem;
     background-color: #212529;
+    margin-top: 180px;
   }
 
   .footer-contact {
