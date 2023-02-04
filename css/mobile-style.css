@@ -15,7 +15,7 @@
   }
 
   .hero-section {
-    height: 70vh;
+    height: 80vh;
     position: relative;
   }
 
@@ -29,7 +29,7 @@
     transform: translateY(-50%);
   }
   .ver-logo{
-    margin-top: 20px;
+    margin-top: 80px;
     width: 95%;
     height: 95%;
 
@@ -265,6 +265,21 @@
 
   .themes-section h1 {
     margin-bottom: 40px;
+    color: #eeeeee;
+  }
+
+  .themes-section-sponsors h1 {
+    margin-bottom: 40px;
+  }
+  .themes-section-sponsors {
+    height: 250vh;
+    margin-top: 0;
+    margin-bottom: 0px;
+    background: linear-gradient(to bottom right, #ac0b10, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
   }
 
   .theme-cards {
@@ -294,7 +309,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #eeeeee;
+    background: linear-gradient(to bottom right, #ac0b10, #000000);
   }
   .event-schedule {
     margin-top: 20px;
